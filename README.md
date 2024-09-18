@@ -1,4 +1,4 @@
-# Released Api Spam SMS
+# Release Api Spam SMS
 
 ### ĐỂ SỬ DỤNG API BẰNG CÁCH CALLBACK BẰNG CODE BÊN DƯỚI
 
