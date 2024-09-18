@@ -13,7 +13,7 @@ curl_setopt_array($ch, [
 echo curl_exec($ch);
 curl_close($ch);
 ```
-### HOẶC SÀI CURL
+### CURL
 
 ```comman
 curl -H "X-WusTeam: xxx" https://your-domain.com/spam-sms.php?sdt=phone
