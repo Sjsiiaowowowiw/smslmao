@@ -15,6 +15,6 @@ curl_close($ch);
 ```
 ### CURL
 
-```comman
+```cmd
 curl -H "X-WusTeam: xxx" https://your-domain.com/spam-sms.php?sdt=phone
 ```
