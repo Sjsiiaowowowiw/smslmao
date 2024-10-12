@@ -689,7 +689,7 @@ $wt->API('Book365', new SpamSMS(
         "content-type: application/x-www-form-urlencoded; charset=UTF-8",
     ],
     http_build_query([
-        "dangky_name" => "Vuong Thanh Dieu",
+        "dangky_name" => "quy gia",
         "dangky_phone" => "{{phone}}",
         "dangky_pwd" => "wusteam123@@",
         "dangky_pwdCheck" => "wusteam123@@",
@@ -698,7 +698,7 @@ $wt->API('Book365', new SpamSMS(
         "dangky_district" => "0",
         "dangky_award" => "0",
         "dangky_address" => "",
-        "dangky_email" => "wusteam123@gmail.com",
+        "dangky_email" => "quydca2@gmail.com",
     ])
 ));
 // OTP
